@@ -18,6 +18,7 @@
 # def solution(numbers, target_sum):
 #     pass
 
+
 def solution(numbers, target_sum):
     seen = {}
     for indx, value in enumerate(numbers):
@@ -27,5 +28,6 @@ def solution(numbers, target_sum):
             break
         seen[value] = indx
     return []
-            
+
+
 solution([4, 1, 2, -2, 11, 15, 1, -1, -6, -4], 9)
