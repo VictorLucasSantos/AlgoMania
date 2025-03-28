@@ -17,7 +17,9 @@ def simple_deep_first_seach(node, value_to_find):
     )
 
 
-def find_next_position(position, visited_positions):
+def find_next_position(
+    position,
+):
     return 0, 0
 
 
