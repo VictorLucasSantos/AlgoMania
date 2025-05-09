@@ -22,12 +22,12 @@
 def solution(numbers, target_sum):
     seen = {}
     for indx, value in enumerate(numbers):
-        complemento = target_sum - value
-        if complemento in seen:
-            return [complemento, value]
-            break
+        complement = target_sum - value
+        if complement in seen:
+            return [complement, value]
         seen[value] = indx
     return []
 
 
-solution([4, 1, 2, -2, 11, 15, 1, -1, -6, -4], 9)
+if __name__ == "__main__":
+    print(solution([4, 1, 2, -2, 11, 15, 1, -1, -6, -4], 9))
